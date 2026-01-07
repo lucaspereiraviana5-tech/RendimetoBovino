@@ -31,9 +31,9 @@ document.getElementById("formulario").addEventListener("submit", function(e) {
       `Data: ${data}\n` +
       `Qtd. Animais: ${qtd}\n` +
       `Peso Fazenda: ${formatarContabil(entrada)} kg\n` +
-      `Média animal (entrada): ${formatarContabil(mediaEntrada)} kg (${mediaEntradaArroba.toFixed(2)} @)\n` +
+      `Média Animal Fazenda: ${formatarContabil(mediaEntrada)} kg (${mediaEntradaArroba.toFixed(2)} @)\n` +
       `Peso Frigorifico: ${formatarContabil(saida)} kg\n` +
-      `Média animal (saída): ${formatarContabil(mediaSaida)} kg (${mediaSaidaArroba.toFixed(2)} @)\n` +
+      `Média Animal Frigorifico: ${formatarContabil(mediaSaida)} kg (${mediaSaidaArroba.toFixed(2)} @)\n` +
       `Rendimento: ${rendimento.toFixed(2)}%`;
 
     document.getElementById("resultado").innerText = resultado;
@@ -45,9 +45,9 @@ document.getElementById("formulario").addEventListener("submit", function(e) {
       `*Data:* ${data}\n` +
       `*Qtd. Animais:* ${qtd}\n` +
       `*Peso fazenda:* ${formatarContabil(entrada)} kg\n` +
-      `*Média animal (entrada):* ${formatarContabil(mediaEntrada)} kg (${mediaEntradaArroba.toFixed(2)} @)\n` +
+      `*Média Animal Fazenda:* ${formatarContabil(mediaEntrada)} kg (${mediaEntradaArroba.toFixed(2)} @)\n` +
       `*Peso Frigorifico:* ${formatarContabil(saida)} kg\n` +
-      `*Média animal (saída):* ${formatarContabil(mediaSaida)} kg (${mediaSaidaArroba.toFixed(2)} @)\n` +
+      `*Média Animal Frigorifico:* ${formatarContabil(mediaSaida)} kg (${mediaSaidaArroba.toFixed(2)} @)\n` +
       `*Rendimento:* ${rendimento.toFixed(2)}%`;
   } catch (err) {
     alert("Erro: " + err);
