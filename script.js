@@ -30,9 +30,9 @@ document.getElementById("formulario").addEventListener("submit", function(e) {
       `Fazenda: ${fazenda}\n` +
       `Data: ${data}\n` +
       `Qtd. Animais: ${qtd}\n` +
-      `Peso de entrada: ${formatarContabil(entrada)} kg\n` +
+      `Peso Fazenda: ${formatarContabil(entrada)} kg\n` +
       `Média animal (entrada): ${formatarContabil(mediaEntrada)} kg (${mediaEntradaArroba.toFixed(2)} @)\n` +
-      `Peso de saída: ${formatarContabil(saida)} kg\n` +
+      `Peso Frigorifico: ${formatarContabil(saida)} kg\n` +
       `Média animal (saída): ${formatarContabil(mediaSaida)} kg (${mediaSaidaArroba.toFixed(2)} @)\n` +
       `Rendimento: ${rendimento.toFixed(2)}%`;
 
