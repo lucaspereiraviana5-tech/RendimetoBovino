@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cálculo de Rendimento de Bovinos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Cálculo de Rendimento de Bovinos</h2>
+    <form id="formulario">
+      <label>Pecuarista:</label>
+      <input type="text" id="pecuarista" required>
+
+      <label>Fazenda:</label>
+      <input type="text" id="fazenda" required>
+
+      <label>Data (dd/mm/aaaa):</label>
+      <input type="text" id="data" value="07/01/2026" required>
+
+      <label>Qtd. Animais:</label>
+      <input type="number" id="qtd" required>
+
+      <label>Peso de entrada (kg):</label>
+      <input type="number" step="0.01" id="entrada" required>
+
+      <label>Peso de saída (kg):</label>
+      <input type="number" step="0.01" id="saida" required>
+
+      <button type="submit" class="btn btn-primary">Calcular Rendimento</button>
+      <button type="button" class="btn btn-secondary" onclick="limpar()">Limpar</button>
+    </form>
+
+    <div id="resultado" class="resultado"></div>
+    <button type="button" class="copy-btn" onclick="copiarResumo()">📋 Copiar Resumo</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

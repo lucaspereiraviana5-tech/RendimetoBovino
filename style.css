@@ -1,0 +1,103 @@
+/* Fundo geral com imagem de boi no pasto */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, rgba(76,175,80,0.6), rgba(139,94,60,0.6)),
+              url("boi-pasto.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+}
+
+/* Caixa central com fundo semi-transparente */
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: rgba(255, 255, 255, 0.7); /* branco com 70% de opacidade */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* Título */
+h2 {
+  text-align: center;
+  color: #8B5E3C; /* marrom */
+  margin-bottom: 20px;
+}
+
+/* Rótulos dos campos */
+label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+  color: #4CAF50; /* verde pasto */
+}
+
+/* Campos de entrada */
+input {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+/* Botões */
+.btn {
+  margin-top: 15px;
+  padding: 12px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Botão principal */
+.btn-primary {
+  background: #4CAF50;
+  color: #fff;
+}
+.btn-primary:hover {
+  background: #388E3C;
+}
+
+/* Botão secundário */
+.btn-secondary {
+  background: #8B5E3C;
+  color: #fff;
+}
+.btn-secondary:hover {
+  background: #6D4C2F;
+}
+
+/* Caixa de resultado */
+.resultado {
+  margin-top: 25px;
+  padding: 20px;
+  border-radius: 8px;
+  background: rgba(255, 243, 205, 0.9); /* dourado claro com leve transparência */
+  border-left: 6px solid #FFD700;
+  font-weight: bold;
+  white-space: pre-line;
+  color: #222;
+}
+
+/* Botão de copiar resumo */
+.copy-btn {
+  display: block;
+  margin: 15px auto 0 auto;
+  background: #FFD700;
+  color: #333;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.copy-btn:hover {
+  background: #FFC107;
+}
