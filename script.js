@@ -1,7 +1,7 @@
 // Usuários de exemplo
 const usuarios = {
   "lucas": "010229",
-  "teste": "12345",
+  "Admin": "12345",
   "maria": "abcde"
 };
 
@@ -100,3 +100,4 @@ function copiarResumo() {
   }
 
 }
+
