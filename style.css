@@ -3,8 +3,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: url("boi-pasto.jpg") no-repeat center center fixed;
-  background-size: cover;
+  background: url("boi-pasto.jpg") no-repeat center center;
+  background-size: cover;              /* ajusta proporcionalmente */
+  background-attachment: scroll;       /* corrige bug em celular */
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -121,6 +122,11 @@ input {
 
 /* Responsividade */
 @media (max-width: 600px) {
+  body {
+    background-position: center top;   /* foca no topo da imagem em telas pequenas */
+    background-attachment: scroll;     /* garante adaptação no mobile */
+  }
+
   .titulo {
     font-size: 1.6em;
     top: 12px;
