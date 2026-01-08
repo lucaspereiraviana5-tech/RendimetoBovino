@@ -1,7 +1,7 @@
 // Usuários de exemplo
 const usuarios = {
-  "lucas": "12345",
-  "joao": "senha123",
+  "lucas": "010229",
+  "teste": "12345",
   "maria": "abcde"
 };
 
@@ -98,4 +98,5 @@ function copiarResumo() {
   } else {
     alert("Nenhum resumo gerado ainda!");
   }
+
 }
