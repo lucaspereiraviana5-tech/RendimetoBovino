@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - LV System</title>
+  <!-- Responsividade -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Estilos CSS -->
+  <style>
+    /* Fundo com imagem */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: url("boi-pasto.jpg") no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Título chamativo */
+    h1 {
+      position: absolute;
+      top: 40px;
+      text-align: center;
+      font-size: 3em;
+      font-weight: bold;
+      color: #fff;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+      letter-spacing: 3px;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /* Caixa de login */
+    .login-box {
+      background: rgba(255, 255, 255, 0.85);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+      text-align: center;
+      width: 300px;
+    }
+
+    .login-box label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .login-box input {
+      width: 90%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 12px;
+      background: #2e8b57;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .login-box button:hover {
+      background: #246b44;
+    }
+
+    #mensagem {
+      margin-top: 15px;
+      font-size: 0.9em;
+    }
+
+    /* Responsividade para celular */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+        top: 20px;
+      }
+
+      .login-box {
+        width: 90%;
+        padding: 20px;
+      }
+
+      .login-box input, .login-box button {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Título -->
+  <h1>LV System</h1>
+
+  <!-- Caixa de login -->
+  <div class="login-box">
+    <form onsubmit="return login()">
+      <label for="username">Usuário:</label>
+      <input type="text" id="username" required>
+
+      <label for="password">Senha:</label>
+      <input type="password" id="password" required>
+
+      <button type="submit">Entrar</button>
+    </form>
+    <div id="mensagem"></div>
+  </div>
+
+  <!-- Script JS -->
+  <script>
+    // Lista de usuários e senhas (exemplo)
+    const usuarios = {
+      "lucas": "12345",
+      "joao": "senha123",
+      "maria": "abcde"
+      // até 100 usuários aqui
+    };
+
+    function login() {
+      const user = document.getElementById("username").value;
+      const pass = document.getElementById("password").value;
+
+      if (usuarios[user] && usuarios[user] === pass) {
+        // Redireciona para a página principal
+        window.location.href = "index.html";
+      } else {
+        document.getElementById("mensagem").innerHTML =
+          `<p style="color:red;">Usuário ou senha incorretos.</p>`;
+      }
+      return false; // evita recarregar a página
+    }
+  </script>
+</body>
+</html>
