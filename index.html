@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>LV System - Login</title>
+  <link rel="shortcut icon" href="vaca.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="titulo">LV System</div>
+
+  <div class="container">
+    <h2>Login</h2>
+    <form onsubmit="return login()">
+      <label for="username">Usuário:</label>
+      <input type="text" id="username" required>
+
+      <label for="password">Senha:</label>
+      <input type="password" id="password" required>
+
+      <button type="submit" class="btn btn-primary">Entrar</button>
+    </form>
+    <div id="mensagem"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

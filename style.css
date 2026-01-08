@@ -1,0 +1,139 @@
+/* Fundo */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: url("boi-pasto.jpg") no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Nome LV System no canto superior esquerdo */
+.titulo {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 2.2em;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 2px;
+  z-index: 10;
+}
+
+/* Caixa principal */
+.container {
+  background: rgba(255, 255, 255, 0.75); /* transparência */
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  width: 320px; /* reduzido para login */
+  max-width: 90%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Formulário centralizado */
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  width: 100%;
+  text-align: left;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+/* Botões */
+.btn, .copy-btn {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.05em;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+.btn-primary {
+  background: #2e8b57;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #246b44;
+}
+
+.btn-secondary {
+  background: #555;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: #333;
+}
+
+.copy-btn {
+  background: #007bff;
+  color: white;
+}
+
+.copy-btn:hover {
+  background: #0056b3;
+}
+
+/* Resultado */
+.resultado {
+  margin-top: 15px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #333;
+  text-align: left;
+  white-space: pre-line; /* preserva \n como quebra de linha */
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .titulo {
+    font-size: 1.6em;
+    top: 12px;
+    left: 12px;
+  }
+
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .btn, .copy-btn {
+    width: 100%;
+    margin: 8px 0;
+  }
+}
